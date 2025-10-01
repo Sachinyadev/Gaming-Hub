@@ -1,12 +1,11 @@
-
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
-let turnO = true; //playerX, playerO
-let count = 0; //To Track Draw
+let turnO = true; 
+let count = 0; 
 
 const winPatterns = [
   [0, 1, 2],
@@ -23,22 +22,20 @@ const resetGame = () => {
   turnO = true;
   count = 0;
   enableBoxes();
-  msgContainer.classList.add("hide");
-};S
+  msgContainer.classList.add("hide"); 
+};
 
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     if (turnO) {
-      //playerO
       box.innerText = "O";
-      box.classList.add("player1")
-      box.classList.remove("player2")
+      box.classList.add("player1");
+      box.classList.remove("player2");
       turnO = false;
     } else {
-      //playerX
       box.innerText = "X";
-      box.classList.add("player2")
-      box.classList.remove("player1")
+      box.classList.add("player2");
+      box.classList.remove("player1");
       turnO = true;
     }
     box.disabled = true;
@@ -53,7 +50,7 @@ boxes.forEach((box) => {
 });
 
 const gameDraw = () => {
-  msg.innerText = `Game was a Draw.`;
+  msg.innerText = `🤝Game was a Draw.`;
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
@@ -68,11 +65,12 @@ const enableBoxes = () => {
   for (let box of boxes) {
     box.disabled = false;
     box.innerText = "";
+    box.classList.remove("player1", "player2"); 
   }
 };
 
 const showWinner = (winner) => {
-  msg.innerText = `Congratulations, Winner is ${winner}`;
+  msg.innerText = ` 🎉Congratulations, Winner is ${winner}`;
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
@@ -90,7 +88,11 @@ const checkWinner = () => {
       }
     }
   }
+  return false; 
 };
 
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
+
+
