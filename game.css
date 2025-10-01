@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto;
+  background-image: url(footer_image.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+/* Navbar section*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;        
+  background: #fff;
+  border-radius: 0.85rem 0.85rem 0 0;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.nav-logo {
+  flex-shrink: 0;           
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;          
+  list-style: none;
+  gap: 1rem;
+  margin-left: auto;        
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #0077ff;
+  border-bottom: 1px solid blueviolet;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  background-color: #ffffc7;
+}
+.player1{
+  color: blue;
+}
+.player2{
+  color: #b0413e;
+}
+
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+/* foorer section */
+footer{
+      height: auto;
+      background-image: url(hero-bg.jpg);
+      background-size: cover;
+      color: #000;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section ul{
+    list-style: none;
+    font-size: 1rem;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+.footer-section a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+}
+.footer-section a:hover{
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: yellow;
+}
+.footer-copyright{
+    text-align: center;
+    font-size: 1rem;
+}
