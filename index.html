@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toc</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <header>
+  <header>
         <div class="navbar">
             <div class="nav-logo">
                 <img src="sitelogo.png">
@@ -22,15 +22,29 @@
             </ul>        
         </div>
     </header>
-    
-    <main>
-        <div class="hero-section">
-            <h1>Welcome to Our Webpage</h1>
-            <p>Challenge your mind and have fun with this classic game!</p>
-            <a href="game.html" class="btn">Start Game</a>
-        </div>
-    </main>
-    <footer>
+  <main>
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+    <button id="reset-btn">Reset Game</button>
+  </main>
+
+  <div class="msg-container hide">
+    <p id="msg"></p>
+    <button id="new-game">New Game</button>
+  </div>
+   <footer>
         <div class="footer-section">
             <div class="footer-about">
                 <ul><h3>Gaming Hub</h3>
@@ -63,8 +77,8 @@
             <p>© 2025 Gaming Hub. All rights reserved.</p>
             <p>Design by Ankit Satoriya | Devloped by Sachin Yadav</p>
         </div>
-        
     </footer>
 
+  <script src="game.js"></script>
 </body>
 </html>
