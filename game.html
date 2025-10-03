@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="game.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="game.css">
 </head>
-<body>
-  <header>
+<body> 
+    <header>
         <div class="navbar">
             <div class="nav-logo">
                 <img src="sitelogo.png">
@@ -22,36 +22,29 @@
             </ul>        
         </div>
     </header>
-  <main>
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-      <div class="game">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-      </div>
-    </div>
-    <button id="reset-btn">Reset Game</button>
-  </main>
 
-  <div class="msg-container hide">
-    <p id="msg"></p>
-    <button id="new-game">New Game</button>
-  </div>
-   <footer>
+    <main>
+        <div class="games-container">
+            <div class="first-game">
+                <h1>Tic Tac Toe</h1>
+                <img src="firstgame.png" alt="tic tac toe image">
+                <a href="game1.html" class="btn">Play Now</a>
+            </div>
+            <div class="second-game">
+                <h1>Rock Paper Scissor</h1>
+                <img src="secondgame.png" alt="rock paper Scissor">
+                <a href="game2.html" class="btn">Play Now</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
         <div class="footer-section">
             <div class="footer-about">
                 <ul><h3>Gaming Hub</h3>
                     <p>“Best platform for arcade, puzzle & multiplayer games”.</p>
                     <p>“Join our community for endless fun”.</p>
-                 </ul>
-              
+                </ul>           
             </div>
             
             <div class="footer-links">
@@ -78,7 +71,5 @@
             <p>Design by Ankit Satoriya | Devloped by Sachin Yadav</p>
         </div>
     </footer>
-
-  <script src="game.js"></script>
 </body>
 </html>
