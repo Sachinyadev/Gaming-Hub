@@ -9,7 +9,6 @@ body {
   background-image: url(footer_image.jpg);
   background-size: cover;
   color: #000;
-  font-family: Arial, sans-serif;
 }
 
 /* Navbar section*/
@@ -99,7 +98,7 @@ footer{
 }
 .footer-section{
     display: flex;
-    flex-wrap:wrap
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-section ul{
@@ -125,3 +124,4 @@ footer{
     font-size: 1rem;
 
 }
+
