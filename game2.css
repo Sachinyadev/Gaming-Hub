@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-image: url(footer_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+/* Navbar section*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;        
+    background: #fff;
+    border-radius: 0.85rem 0.85rem 0 0;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+/* navbar Logo */
+.nav-logo {
+    flex-shrink: 0;           
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;          
+    list-style: none;
+    gap: 1rem;       
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #0077ff;
+    border-bottom: 1px solid blueviolet;
+}
+
+
+/* hero section */
+.game-container{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#heading{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.choice{
+    height: 165px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover{
+background-color: dodgerblue;
+
+}
+.choice img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 6rem;
+    font-size: 2rem;
+}
+#user-score ,#comp-score{
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top: 3rem;
+}
+#msg{
+    font-size: 4rem;
+    background-color: #081b31;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+}
+#msg.win-msg{
+    background-color: green;
+}
+#msg.loss-msg{
+    background-color: red;
+}
+.final-container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.50rem;
+}
+#new-game{
+    height: auto;
+    font-size: 4rem;
+    border-radius: 1.5rem;
+    background-image: url(footer_image.jpg);
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+#new-game:hover{
+    height: auto;
+    background-image: url(hero-bg.jpg);
+    background-size: cover;
+}
+.hide-choices{
+    display: none;
+}
+.hide{
+    display: none;  
+}
+/* mobile renponsive */
+@media (max-width: 768px) {
+    .game-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 1rem;
+    }
+    #heading{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .choices {
+        flex-direction: column; 
+        justify-content: center;
+        gap: 1.50rem; 
+        margin-top: 1rem;
+    }
+
+    .choice {
+        height: 145px;
+        width: 145px;
+    }
+
+    .choice img {
+        height: 130px;
+        width: 130px;
+    }
+    #user-score,#comp-score{
+        font-size: 3rem;
+    }
+    .score-board{
+        font-size: 2rem;
+    }
+    #msg{
+        font-size: 1rem;
+    }
+    #winner ,#new-game{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #new-game{
+        font-size: 1.50rem;
+    }
+}
+
+
+/* foorer section */
+footer{
+    height: auto;
+    background-image: url(hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-section ul{
+    list-style: none;
+    font-size: 1rem;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+.footer-section a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+}
+.footer-section a:hover{
+    text-decoration: underline;
+    font-size: 1.1rem;
+    color: yellow;
+}
+.footer-copyright{
+    text-align: center;
+    font-size: 1rem;
+}
