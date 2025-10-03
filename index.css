@@ -99,6 +99,7 @@ footer{
 }
 .footer-section{
     display: flex;
+    flex-wrap:wrap
     justify-content: space-between;
 }
 .footer-section ul{
@@ -122,4 +123,5 @@ footer{
 .footer-copyright{
     text-align: center;
     font-size: 1rem;
+
 }
