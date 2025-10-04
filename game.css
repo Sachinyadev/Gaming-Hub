@@ -71,6 +71,8 @@ body{
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 500px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .box:hover {
     transform: translateY(-8px);
@@ -90,27 +92,20 @@ body{
     margin-bottom: 12px;
     color: #333;
 }
-.box a{
+.box a.btn {
     text-decoration: none;
-    width: 100%;
-    padding:  0 14rem ;
-    font-size: 3rem;
+    display: block;            
+    width: 100%;             
+    max-width: 100%;           
+    padding: 0.2rem 1.5rem; 
+    margin: 0 auto 1rem auto;   
+    font-size: 2rem;
+    box-sizing: border-box;
     border-radius: 1rem;
-}
-
-.btn {
-    display: block;        
-    width: 90%;               
-    margin: 0 auto;         
-    text-align: center;      
-    font-size: 1.3rem;        
-    padding: 0.8rem;          
-    border-radius: 1rem;
-    background: linear-gradient(to right, #0077ff, #00bfff);
-    color: white;
-
+    background: linear-gradient(to right, #0077ff, #00bfff);     
     transition: all 0.3s ease;
 }
+
 .btn:hover{
     text-decoration: none;
     height: auto;
