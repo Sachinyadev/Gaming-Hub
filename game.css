@@ -117,8 +117,9 @@ body{
 /* mobile responsive */
 @media (max-width: 768px) {
     .games-container {
+    width:auto;
     grid-template-columns: 1fr; 
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 3rem;
     }
 }
@@ -158,3 +159,4 @@ footer{
     text-align: center;
     font-size: 1rem;
 }
+
