@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Flip Game</title>
+    <link rel="stylesheet" href="game4.css">
+</head>
+<body>
+        <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="sitelogo.png">
+            </div>
+            <ul>
+                <div class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Play Games</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </div>
+            </ul>        
+        </div>
+    </header>
+
+    <main>
+        <h1>Memory Card Game</h1>
+        <div class="msg-container hide">
+            <div>
+                <h2>Game was Over</h2>
+                <p id="score">Score:0</p>
+            </div>
+            <button id="new-game">New Game</button>
+        </div>
+
+        <div class="game-container">
+            <div class="game-status">
+                <p id="moves">Moves: 0</p>
+                <p id="pair-found">Pair Found: 0</p>
+                <p id="Timer">Timer: 00:00</p>
+            </div>
+
+            <div class="game-board">
+                <!-- first pair -->
+                <div class="card" data-card="1">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="cardj.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-card="1">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="cardj.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second pair -->
+                <div class="card" data-card="2">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="cardqueen.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-card="2">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="cardqueen.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third pair -->
+                <div class="card" data-card="3">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="carda.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-card="3">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="carda.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- forth pair -->
+                <div class="card" data-card="4">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="cardjoker.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-card="4">
+                    <div class="card-inner">
+                        <div class="front-side">
+                            <img src="cardback.png" alt="Front">
+                        </div>
+                        <div class="back-side">
+                            <img src="cardjoker.png" alt="Back">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-about">
+                <ul><h3>Gaming Hub</h3>
+                    <p>“Best platform for arcade, puzzle & multiplayer games”.</p>
+                    <p>“Join our community for endless fun”.</p>
+                </ul>
+            
+            </div>
+            
+            <div class="footer-links">
+                <ul><h3>Qucik Links</h3>
+                    <li><a href="#">Ranking</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Suppport</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <ul><h3>Follow Us</h3>
+                    <li><a href="https://www.facebook.com/ankit.kumar.santoriya">Fckebook</a></li>
+                    <li><a href="https://www.instagram.com/ankit_yadav_637">Instagram</a></li>
+                    <li><a href="https://discord.gg/EcpsxWu8K">Discord</a></li>
+                    <li><a href="https://youtube.com/@ankitsantoriya">YouTube</a></li>
+                </ul>
+            </div><hr>
+        </div>
+            
+        <div class="footer-copyright">
+            <p>© 2025 Gaming Hub. All rights reserved.</p>
+            <p>Design by Ankit Satoriya | Devloped by Sachin Yadav</p>
+        </div>
+    </footer>
+
+    <script src="game4.js"> </script>
+</body>
+</html>
