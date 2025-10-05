@@ -156,13 +156,18 @@ transform: scale(1.05);
 @media only screen and (max-width: 768px) {
 .game-board {
     grid-template-columns: repeat(2, 1fr); 
-    max-width: 90%;  
+    max-width: 100%; 
+    gap: 1rem;
+    padding: o o.30rem;   
 }
 .msg-container{
+    hight: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.hide{
+    display: none;
 }
 
 /* foorer section */
@@ -199,4 +204,5 @@ footer{
 .footer-copyright{
     text-align: center;
     font-size: 1rem;
+
 }
