@@ -4,14 +4,24 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
-    height: auto;
+    display: flex;
+    flex-direction: column;
     background-image: url(footer_image.jpg);
     background-size: cover;
     color: #000;
     text-align: center;
     font-family: sans-serif;
 }
+
+main {
+    flex: 1;
+}
+
 /* Navbar section*/
 .navbar {
     display: flex;
@@ -133,9 +143,11 @@ body {
     width: 100%;
     font-size: 2rem;
 }
+
 #score{
     margin: 2rem auto;
 }
+
 #new-game{
     background: linear-gradient(90deg, #06b6d4, #3b82f6);
     font-size: 3rem;
@@ -144,45 +156,58 @@ body {
     cursor: pointer;
     transition: all 0.4s ease;
 }
+
 #new-game:hover{
     background: linear-gradient(90deg, #3b82f6, #06b6d4);
-transform: scale(1.05);
-    
+    transform: scale(1.05);
 }
-.hide{
-    display: none;
-}
-/* responsive */
-@media only screen and (max-width: 768px) {
-.game-board {
-    grid-template-columns: repeat(2, 1fr); 
-    max-width: 100%; 
-    gap: 1rem;
-    padding: o o.30rem;   
-}
-.msg-container{
-    hight: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .hide{
     display: none;
 }
 
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .game-board {
+        grid-template-columns: repeat(4, 1fr); 
+        max-width: 100%; 
+        gap: 0.5rem;
+        padding: 0 0.30rem;   
+    }
+
+    .card {
+        width: 80px;
+        height: 120px;
+    }
+
+    .msg-container{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hide{
+        display: none;
+    }
+}
+
 /* foorer section */
 footer{
+    margin-top: auto;
     height: auto;
     background-image: url(hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .footer-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .footer-section ul{
     list-style: none;
     font-size: 1rem;
@@ -191,19 +216,20 @@ footer{
     padding: 0.5rem;
     flex-wrap: wrap;
 }
+
 .footer-section a{
     text-decoration: none;
     font-size: 1rem;
     color: #000;
 }
+
 .footer-section a:hover{
     text-decoration: underline;
     font-size: 1.1rem;
     color: yellow;
 }
+
 .footer-copyright{
     text-align: center;
     font-size: 1rem;
-
 }
-
